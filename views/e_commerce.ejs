@@ -1,0 +1,17 @@
+<%- layout('layouts/index') %>
+
+<div class="maindiv">
+    <% data.forEach(member => { %>
+        <div class="card">
+            <div class="card-content">
+                <h2><%= member.name %></h2>
+                <p><%= member.battery %></p>
+                <p class="price"><%= member.price %></p>
+                <button id=`${member.id}` class="buy-button" onclick="payNow(event)">Buy Now</button>
+            </div>
+        </div>
+        <br>
+    <% }); %>
+</div>
+
+<%- include('partials/razorepay.ejs') %>

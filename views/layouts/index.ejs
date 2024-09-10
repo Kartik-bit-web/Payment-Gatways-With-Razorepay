@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sytlesheet/mainpage.css">
+    <title>Phone Sale Card</title>
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('show');
+        }
+    </script>
+
+    <style>
+        body{
+            margin: 0%;
+            background-color: #1b1b1b;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#" class="brand-logo">Payments</a>
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="http://127.0.0.1:3000" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Payment Services ▼</button>
+                <div class="dropdown-content navbar-dark  bg-dark">
+                    <a href="http://127.0.0.1:3000/E-commerce-Payment-System">E-Commerce Pay</a>
+                    <a href="http://127.0.0.1:3000/plan-subscriptions/plans">Subscription Pay</a>
+                    <a href="#">Service 3</a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <br>
+    <div>
+
+        <%- body %>
+
+    </div>
+    
+</body>
+</html>

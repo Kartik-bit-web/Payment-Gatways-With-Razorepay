@@ -1,0 +1,234 @@
+.card {
+    background-color: #0d0929;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(53, 52, 52, 0.1);
+    width: 270px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+.card-content {
+    padding: 10px;
+}
+.card-content h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.card-content p {
+    color: #555;
+    
+}
+.card-content .price {
+    font-size: 20px;
+    color: #000c7a;
+    margin-bottom: 7px;
+}
+.buy-button {
+    background-color: #130163;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+    background-color: #e41c1c;
+}
+.maindiv{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block; /* Show the toggle button on small screens */
+    }
+
+    .navbar-links {
+        display: none; /* Hide the nav links by default on small screens */
+        width: 100%; /* Full width on small screens */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links.show {
+        display: flex; /* Show the nav links when toggled */
+    }
+
+    .dropdown-content {
+        position: static; /* Dropdown should be static for smaller screens */
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none; /* Disable hover effect on smaller screens */
+    }
+
+    .dropdown .dropbtn:focus + .dropdown-content,
+    .dropdown-content:hover {
+        display: block; /* Show dropdown content on click */
+    }
+}
+
+
+
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color: #f1f1f1;
+}
+
+.plan-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.plan-header {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.plan-price {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #00ff88;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #00ff88;
+    border: none;
+    border-radius: 5px;
+    color: #121212;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00cc66;
+}
+
+@media (max-width: 768px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
